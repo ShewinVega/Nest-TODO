@@ -1,0 +1,19 @@
+version: '3.9'
+
+services:
+  tododb:
+    container_name: tododb
+    image: postgres
+    restart: always
+    ports:
+      - 6432:5432
+    volumes:
+      - postgres:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DATABASE}
+      - PGDATA=/var/lib/postgresql/data/pgdata
+
+volumes:
+  postgres:

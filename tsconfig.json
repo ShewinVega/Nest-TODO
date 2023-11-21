@@ -10,6 +10,14 @@
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./",
+    "paths": {
+      "@auth/*": ["src/auth/*"],
+      "@user/*": ["src/user/*"],
+      "@task/*": ["src/task/*"],
+      "@prisma/*": ["src/prisma/*"],
+      "@utils/*": ["src/utils/*"],
+      "@config/*": ["src/config/*"]     
+    },
     "incremental": true,
     "skipLibCheck": true,
     "strictNullChecks": false,
