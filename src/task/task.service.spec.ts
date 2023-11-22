@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { TaskService } from './task.service';
 import { PrismaService } from '../prisma/prisma.service';
-import { prismaMock } from '../singleton.config';
+import { prismaMock } from '../config/singleton.config';
 import { taskMock } from '../../__Mocks__/task.mock';
 import { userTest } from '../../__Mocks__/use.mock';
 

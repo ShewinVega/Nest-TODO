@@ -2,7 +2,7 @@ import { Test, TestingModule } from '@nestjs/testing';
 import { UserService } from './user.service';
 import { userTest } from '../../__Mocks__/use.mock';
 import { PrismaService } from '../prisma/prisma.service';
-import { prismaMock } from '../singleton.config';
+import { prismaMock } from '../config/singleton.config';
 
 
 describe('UserService', () => {
